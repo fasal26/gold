@@ -5,6 +5,7 @@
 @import "about.css";
 @import "services.css";
 @import "footer.css";
+@import "responsive.css"; 
 /* @import "review.css";
 @import "oncology.css";
 @import "blog.css";
@@ -18,13 +19,14 @@
 
 :root {
     --font-family: 'Montserrat', sans-serif;
-    --color-bg: #FFFFFF;
+    --color-bg: #e7e7e7;
     --color-text: #8D96A3;
     --dark-blue: #0a473f;
     --color-dark-blue: #1C265B;
     --color-gold: #ffb50a;
     --color-dark-gold: #eda505;
     --sa-custom-v1: #002A56;
+    --nav-background: #6a6868
   }
 
 * {
@@ -35,7 +37,7 @@
 }
 
 body{
-  background-color: #e7e7e7;
+  background-color: var(--color-bg);
     font-family: var(--font-family);
     overflow: auto;
 }
@@ -47,13 +49,13 @@ body{
 
 
 .sa-dialog {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: -1px;
-  background: rgba(0,0,0,0.35);
+  background: rgb(0 0 0 / 69%);
 }
 
 .baba-flex-col{
@@ -77,7 +79,7 @@ body{
 }
 
 .dialog-items-container{
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .dialog-items-container > p{
@@ -106,7 +108,7 @@ body{
 }
 
 .sa-dialog-body {
-  background-color: #E41E51;
+  background: transparent;
   position: absolute;
   width: 63%;
 }

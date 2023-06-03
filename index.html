@@ -12,7 +12,33 @@
 <body>
     <div id="root">
         <div class="app">
+            <div class="sa-dialog" id="dlg" >
+                <div class="sa-dialog-body sa-fixed-right">
+                    <p>BG</p>
+                    <div class="dialog-items-container">
+                        <div class="dialog-items doc-flex">
+                            <img src="Assets/home.svg" alt="">
+                            <p onclick="scrollInto('root')">Home</p>
+                        </div>
+                        <div class="dialog-items doc-flex">
+                            <img src="Assets/about.svg" alt="">
+                            <p onclick="scrollInto('about-us')">About Us</p>
+                        </div>
+                        <div class="dialog-items doc-flex">
+                            <img src="Assets/blog.svg" alt="">
+                            <p onclick="scrollInto('blog')">Blog</p>
+                        </div>
+                        <div class="dialog-items doc-flex">
+                            <img src="Assets/contact-mail.svg" alt="">
+                            <p onclick="scrollInto('form')">Contact Us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="doc-banner-container">
+                <div class="docdet-mob doc-padding">
+                    <img src="Assets/bars-staggered.png" alt="menu" class="navbar_menu" id="burger">
+                </div>
                 <div class="doc-flex nav-container">
                     <p class="pointer underline-anim" onclick="scrollInto('root')">Home</p>
                     <p class="pointer underline-anim" onclick="scrollInto('about-us')">About Us</p>
@@ -20,18 +46,7 @@
                     <p class="pointer underline-anim" onclick="scrollInto('form')">Contact Us</p>
                 </div>
                 <h1>Unlock the Power of Gold with <strong>Baba Gold</strong></h1>
-                <!-- <picture>
-                    <source 
-                      media="(min-width: 700px)"
-                      srcset="https://oregroups.com/public/assets/admin/uploads/banners/banner_image1645899491.jpg">
-                    <source 
-                      media="(min-width: 465px)"
-                      srcset="https://oregroups.com/public/assets/admin/uploads/banners/banner_image1645899491.jpg">
-                    <img 
-                      src="https://oregroups.com/public/assets/admin/uploads/banners/banner_image1645899491.jpg" 
-                      alt="gold image">
-                  </picture> -->
-                  <video width="100%" height="550px" autoplay muted loop style="object-fit: cover">
+                  <video width="100%" height="550px" autoplay muted loop style="object-fit: cover;">
                     <source src="Assets/pexels-crazy-motions-8733007-3840x2160-30fps.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video>
@@ -50,7 +65,6 @@
                     Transparent and ethical: At Baba Gold, we uphold the highest ethical standards, ensuring transparency in our pricing, information, and reporting.
                     Education and empowerment: We believe in equipping our clients with the knowledge and tools they need to succeed. Benefit from our educational resources, market insights, and expert guidance.
                     Discover the World of Bullion and Forex Trading</p>
-                <!-- <img src="Assets/001-correct.png" alt=""> -->
                 <ul class="baba-flex">
                     <li class="baba-flex"><img src="Assets/001-correct.png" alt="">Store of Value</li>
                     <li class="baba-flex"><img src="Assets/001-correct.png" alt="">Diversification</li>
@@ -76,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="baba-abtus-conatiner">
+            <div class="baba-abtus-conatiner baba-abtus-mob">
                 <div class="baba-flex baba-abtus">
                     <img src="Assets/our-story.jpg" alt="">
                     <div class="baba-flex-col abt-cntnt">
@@ -146,12 +160,11 @@
                             <p>Joined programs</p>
                         </div>
                         <div class="email">
-                            <input type="text">
+                            <input type="text" class="mail-input">
                             <button class="pointer">Submit</button>
                         </div>
                     </div>
                     <div class="social-media">
-                        <!-- <img src="Assets/youtube.png" alt=""> -->
                         <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
                         <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
                         <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-circled--v1.png" alt="facebook-circled--v1"/>
@@ -166,5 +179,6 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
