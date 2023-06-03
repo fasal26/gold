@@ -1,1 +1,1 @@
-# a markteing website for a gold trading companu
+# a markteing website for a gold trading company
